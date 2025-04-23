@@ -10,7 +10,7 @@ from src.data_preprocessing import preprocess_data
 logger = setup_logger("train")
 
 # Load dataset
-df = pd.read_csv("data/ecommerce_inquiries.csv")
+df = pd.read_csv("data/ecommerceDataset.csv")
 df.columns = ['label', 'text']
 df['label'] = df['label'].str.strip()
 df = preprocess_data(df)
